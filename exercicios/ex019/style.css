@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body{
+    background-color: #d6fde9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #1e402f;
+}
+/*aqui persolizo o meu titulo principal. 
+Em HTML Id = em CSS é #(cerquilha)
+Em HTML Class = em CSS é .*/
+
+/*OBS só pode usar o Id em uma única vez, então quando quero usar a mesma configuração em outros elementos. Uso a Class.*/
+h1#principal{
+    text-align: center;
+    background-color: #3c805e;
+    color: white;
+}
+
+h2{
+    color: #3c805e;
+}
+
+.basico{
+    color: #3c805e;
+}
+
+.intermediario{
+    color: #80793c;
+}
+
+.avancado{
+    color: #803c3c;
+}
+
+.destaque{
+    background-color: #c5c56070;
+}

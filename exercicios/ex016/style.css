@@ -1,0 +1,26 @@
+@charset "UTF-8";/*para compatibilidade de caracteres*/
+*{
+    font-family: arial,Arial, Helvetica, sans-serif;/*fonte usada de todo o projeto*/
+}
+body{
+    background-image: linear-gradient(to right, #0477BF,#048ABF);/*background o site*/
+}
+main{
+    background-color: white;/*Cor de fundo, de onde estará o texto*/
+    border-radius: 10px;/*arredonda a borda*/
+    box-shadow: 5px 5px 15px #014269;/*sobra da caixa onde está o texto*/
+    width: 600px;/*largura onde está a escrita*/
+    padding: 10px;/*uma margem invisível entre a letra e a borda*/
+    margin: auto;/*quadro das informações centralizado*/
+}
+h1{
+color: #0477BF;/*cor da letra*/
+text-align: center;/*alinhamento do texto*/
+text-shadow: 1px 1px 2px #035181;/*sombra no título*/
+}
+h2{
+color: #0477BF;
+}
+p{
+    text-align: justify;/*alinhamento do parágrafo*/
+}

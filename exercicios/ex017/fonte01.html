@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;/*Aqui têm 2 fontes, pois caso o computador não encontre a arial, ele segue na Helvetica, todas não serifadas. https://www.w3schools.com/cssref/css_websafe_fonts.php*/
+
+            /*
+            Medidas Absolutas 
+            cm, mm, in, px, pt, pc
+            
+            Medidas Relativas
+            em, ex, rem, vw,vh, %
+
+            OBS.: RECOMENDAÇÃO USAR APENAS O px E O em
+
+            16px é o tamanho da letra, normalmente. Então: 
+            16px= 1em
+            */
+            /*Importante verificar também se a fonte aceita todas essas configurações*/
+            font-size: 1em;
+            font-style: italic;/* estilo da fonte*/
+            text-decoration: underline; /*sublinhado*/
+
+        }
+
+        h1{
+            /*Ao invés de eu usar isso:
+            
+            font-family: 'work Sans',sans-serif;
+            font-weight: bolder; /*peso da fonte, tem os seguinte parâmetros lighter, normal, bold  e o bolder. Pode ser usado números de 100 a 900.
+            font-size: 3em;
+            font-style: italic;
+
+            Vou usar o shorthand font
+            
+            font-style->font-weight->font-size->font-family
+            
+            Então o código ficará com apenas uma linha, assim:*/
+            font: italic bolder 3em 'work Sans', sans-serif;
+        }
+        h2{
+            font: bold 1em 'work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit aliquid voluptas commodi eaque asperiores, voluptatem libero iure ut dolorem, error eum perferendis nemo mollitia quo. Fugit, quis? Rem, quas vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ipsam natus laboriosam placeat animi sed tenetur sapiente repellendus ea, cum totam perspiciatis assumenda ducimus tempora dolorem. At temporibus quae non.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum pariatur adipisci aperiam ipsum praesentium impedit ea sunt quaerat animi? Quas, error magnam. Ipsum tempore saepe sed minus quod dolore exercitationem?</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, iusto. Quidem eveniet hic laboriosam accusantium veritatis mollitia vel neque, doloribus voluptatibus, architecto voluptatum aliquam, vitae amet aut. Nulla, blanditiis quasi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nisi, enim dolores eligendi exercitationem repudiandae adipisci ea ullam similique ab sit dolor impedit consectetur reiciendis voluptatem vero error voluptatum! Magnam.</p>
+    
+</body>
+</html>

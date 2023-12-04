@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamnaho do seu navegador.</p>
+    <picture><!--O picture carrega imagens, no entanto é possível usar os sources-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--os paramentros do media e srcset e o type da imagem são colocados manualmente. -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"><!--Aqui ele está dizendo que se a foto for menor que 1050, então o srcset irá carregar a foto-m-->
+        <img src="imagens/foto-g.png" alt="Imagem Flexivel"><!--OBS.: A ORDEM é importante, ou seja, deve-se começar pelas imgens G, acima dela, se tiver, colocar uma M, depois P, PP e assim por diante. Caso contrário não funcionará.-->
+    </picture>
+    <hr>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/thebasar.mp3" controls autoplay></audio><!--Muito limitado, corre-se o risco de que em alguns navegadores não funcionar-->
+    <hr>
+    <p>Aqui está a maneira ideal para tocar áudios.</p>
+    <audio preload="metadata" autoplay controls loop><!--Aqui ele tenta carregar os formatos de áudio, iniciando pelo MP3. Tentar evitar aúdios wav, pois são muito grandes. Os parâmetros de preload, "metadata" significa que ele irá carregar algumas coisas e já exibir no site.-->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizemnte seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3" target="_blank ">clique aqui para baixar o arquivo em MP3</a></p>
+    </audio>
+</body>
+</html>
